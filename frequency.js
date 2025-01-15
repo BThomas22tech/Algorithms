@@ -4,11 +4,7 @@ function maxChar(str) {
     let maxChar = "";
 
     for (let char of str) {
-        if (hashtable[char]) {
-            hashtable[char] += 1;
-        } else {
-            hashtable[char] = 1;
-        }
+        hashtable[char] = hashtable[char] + 1 || 1
     }
 
     for (let letter in hashtable) {
