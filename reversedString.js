@@ -40,4 +40,22 @@ for (let number in n){
 return parseInt(newNumb) * Math.sign(n)
 }
 
-console.log(reverseInt(-51))
+// console.log(reverseInt(-51))
+
+
+function palindrome(str){
+    const reversed = ""
+    for (let letter in str){
+        reversed = str[letter] + reversed
+    }
+    for (let letter in reversed){
+        if (reversed[letter] === str[letter])
+            return true
+        else{
+            return false
+        }
+    }
+}
+
+// console.log(palindrome('kayak'))
+// console.log(palindrome('codingmoney'))
