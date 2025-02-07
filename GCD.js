@@ -48,5 +48,5 @@ function GCD3(a,b){
     return GCD3(b,a%b)
 }
 
-console.log(GCD3(15,12))
+console.log(GCD3(15,10))
 console.log(GCD3(5,5))
